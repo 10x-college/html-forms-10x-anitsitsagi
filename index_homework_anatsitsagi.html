@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian Drift SOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<!--Phase 1: The Transmission Protocol (The Form)-->
+    <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+    <form action="#" method="post">
+<!--Phase 2: Pilot Credentials (Fieldset 1)-->    
+        <fieldset>Pilot Credentials</fieldset>
+
+        <label for="pilot-name">Pilot Name:</label>
+        <input type="text" id="pilot-name" required placeholder="Enter name">
+
+        <label for="access-code">Access Code:</label>
+        <input type="password" id="access-code" name="access_code" required>
+
+        <label for="command-email">Command Email:</label>
+        <input type="email" id="command-email" name="email" required>
+
+
+<!--Phase 3: Vessel Diagnostics (Fieldset 2)-->   
+
+        <fieldset>Vessel Diagnostics</fieldset>
+
+        <label for="hull-damage">Hull Damage (%):</label>
+        <input type="number" id="hull-damage" name="hull_damage" required>
+
+        <label for="emergency-level">Emergency Level:</label>
+        <select name="emergency-level" id="emergency-level" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+<!--Phase 4: Mission Log & Evidence (Fieldset 3)-->   
+
+    <fieldset>
+        <legend>Mission Log & Evidence</legend>
+        <label for="sos-message">SOS Message:</label>
+        <textarea name="" id="sos-message" name="sos-message" required rows="3"></textarea>
+    </fieldset>  
+
+    <div>
+        <input type="checkbox" id="quarantine" name="checkbox" required>
+        <label for="quarantine">I agree to quarantine protocols.</label>
+    </div>
+
+        <button type="submit">INITIATE TRANSMISSION</button>
+        <button type="reset">RESET SYSTEM</button>
+
+    </form>
+    <script src="./scripts/launch.js"></script>
+</body>
+</html>
