@@ -11,9 +11,11 @@
     <iframe id="bg-frame" src="./styles/effect.html"></iframe>
     <form action="#" method="post">
 <!--Phase 2: Pilot Credentials (Fieldset 1)-->    
-        <fieldset>Pilot Credentials</fieldset>
+        <fieldset>
+            <legend>Pilot Credentials</legend>
+            </fieldset>
 
-        <label for="pilot-name">Pilot Name:</label>
+        <label for="pilot-name" name="pilot_name">Pilot Name:</label>
         <input type="text" id="pilot-name" required placeholder="Enter name">
 
         <label for="access-code">Access Code:</label>
@@ -25,7 +27,9 @@
 
 <!--Phase 3: Vessel Diagnostics (Fieldset 2)-->   
 
-        <fieldset>Vessel Diagnostics</fieldset>
+        <fieldset>
+            <legend>Vessel Diagnostics</legend>
+            </fieldset>
 
         <label for="hull-damage">Hull Damage (%):</label>
         <input type="number" id="hull-damage" name="hull_damage" required>
@@ -42,13 +46,13 @@
     <fieldset>
         <legend>Mission Log & Evidence</legend>
         <label for="sos-message">SOS Message:</label>
-        <textarea name="" id="sos-message" name="sos-message" required rows="3"></textarea>
-    </fieldset>  
+        <textarea id="sos-message" name="sos-message" required rows="3"></textarea>
 
     <div>
         <input type="checkbox" id="quarantine" name="checkbox" required>
         <label for="quarantine">I agree to quarantine protocols.</label>
     </div>
+    </fieldset>  
 
         <button type="submit">INITIATE TRANSMISSION</button>
         <button type="reset">RESET SYSTEM</button>
